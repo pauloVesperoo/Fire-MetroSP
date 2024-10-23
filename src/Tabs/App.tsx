@@ -1,3 +1,4 @@
+<<<<<<< HEAD:src/Tabs/App.tsx
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Login from './src/Login';
@@ -9,14 +10,21 @@ export default function App() {
       <Text>Open up App.tsx to start working on your</Text>
       <StatusBar style="auto" />
     </View>
+=======
+import Cadastro from './src/Cadastro';
+import Login from './src/Login';
+
+import {NativeBaseProvider, StatusBar} from 'native-base'
+
+import { TEMAS } from './src/estilos/temas'; 
+import Rotas from './src/Rotas';
+
+export default function App() {
+  return (
+    <NativeBaseProvider theme={TEMAS}>
+      {/* <StatusBar backgroundColor={TEMAS.colors.blue[800]}></StatusBar> */}
+        <Rotas/>
+    </NativeBaseProvider>
+>>>>>>> 7378c226f698def138f4b278ba69600b3936bb02:App.tsx
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

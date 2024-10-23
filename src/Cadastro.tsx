@@ -1,6 +1,6 @@
 import { VStack, Image, Box } from 'native-base';
 import { useState } from 'react';
-import Logo from './assets/Logo.png';
+import Logo from '../assets/Logo.png';
 import { Titulo } from './componentes/Titulo';
 import { EntradaTexto } from './componentes/EntradaTexto';
 import { Botao } from './componentes/Botao';
