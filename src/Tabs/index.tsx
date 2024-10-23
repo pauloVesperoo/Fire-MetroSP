@@ -5,6 +5,7 @@ import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Perfil from "./Perfil";
 import Principal from "./Principal";
+import QRcode from './QRcode';
 
 const Tab = createBottomTabNavigator();
 const screenOptions = {
@@ -21,6 +22,11 @@ const tabs = [
       component: Principal,
       icon: 'home'
     },
+    {
+        name: 'QRcode',
+        component: QRcode,
+        icon: 'camera'
+      },
     {
       name: 'Perfil',
       component: Perfil,
@@ -39,7 +45,7 @@ export default function Tabs(){
             options={{
                 headerShown: false,
                 tabBarIcon: ({color, size}) => (
-                    <FontAwesome6 name="person-dress" size={24} color="black" />
+                    <FontAwesome6 name="person-dress" size={24} color="white" />
             )
         }}
         />

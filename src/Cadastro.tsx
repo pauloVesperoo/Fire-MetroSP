@@ -1,6 +1,6 @@
 import { VStack, Image, Box } from 'native-base';
 import { useState } from 'react';
-import Logo from '../assets/Logo.png';
+import Logo from '../assets/Metro_logo.png';
 import { Titulo } from './componentes/Titulo';
 import { EntradaTexto } from './componentes/EntradaTexto';
 import { Botao } from './componentes/Botao';
@@ -23,7 +23,7 @@ export default function Cadastro() {
 
   return (
     <VStack flex={1} alignItems='center' justifyContent='center' p={5}>
-      <Image source={Logo} alt='Logo Voll' alignSelf='center' />
+      <Image source={Logo} alt='Logo Metro' alignSelf='center' width={500} height={150} resizeMode='contain'/>
       <Titulo>
         {secoes[numSecao].titulo}
       </Titulo>

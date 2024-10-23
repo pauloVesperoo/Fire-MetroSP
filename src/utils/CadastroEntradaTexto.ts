@@ -20,8 +20,18 @@ const secoes = [
         },
         {
           id: 4,
-          label: 'Repita a senha',
+          label: 'Confirme a senha',
           placeholder: 'Insira sua senha'
+        },
+        {
+          id: 5,
+          label: 'Cidade',
+          placeholder: 'Insira a sua cidade'
+        },
+        {
+          id: 6,
+          label: 'Data de Nascimento',
+          placeholder: 'Ex: DD/MM/AAAA'
         },
       ],
       checkbox: []
