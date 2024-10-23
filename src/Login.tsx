@@ -1,11 +1,13 @@
 import React from 'react';
 import { VStack, Image, Text, Box, Link } from 'native-base';
 import { TouchableOpacity } from 'react-native';
-import Logo from './assets/Logo.png';
+import Logo from '../assets/Logo.png';
 import { Titulo } from './componentes/Titulo';
 import { EntradaTexto } from './componentes/EntradaTexto';
 import { Botao } from './componentes/Botao';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { StatusBar } from 'expo-status-bar';
 
 // Definindo o tipo das rotas
 type RootStackParamList = {
@@ -19,6 +21,7 @@ type LoginProps = NativeStackScreenProps<RootStackParamList, 'Login'>;
 
 const Login: React.FC<LoginProps> = ({ navigation }) => {
   return (
+    
     <VStack flex={1} alignItems='center' justifyContent='center' p={5}>
       <Image source={Logo} alt='Logo Voll' />
       <Titulo>Faça login em sua conta</Titulo>

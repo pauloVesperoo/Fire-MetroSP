@@ -1,7 +1,8 @@
-import { background } from "native-base/lib/typescript/theme/styled-system";
+//import { background } from "native-base/lib/typescript/theme/styled-system";
+//import SimpleLineIcons from '@expo/vector-icons/SimpleLineIcons';
+//import Ionicons from 'react-native-vector-icons/Ionicons';
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-//import Ionicons from "react-native-vector-icons/Ionicons";
-import SimpleLineIcons from '@expo/vector-icons/SimpleLineIcons';
 import Perfil from "./Perfil";
 import Principal from "./Principal";
 
@@ -18,7 +19,7 @@ const tabs = [
     {
       name: 'Principal',
       component: Principal,
-      icon: 'camera'
+      icon: 'home'
     },
     {
       name: 'Perfil',
@@ -37,8 +38,8 @@ export default function Tabs(){
             component={tab.component}
             options={{
                 headerShown: false,
-                tabBarIcon: () => (
-                    <SimpleLineIcons name="camera" size={24} color="black" />
+                tabBarIcon: ({color, size}) => (
+                    <FontAwesome6 name="person-dress" size={24} color="black" />
             )
         }}
         />
