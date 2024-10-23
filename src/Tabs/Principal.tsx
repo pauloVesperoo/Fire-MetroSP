@@ -1,11 +1,12 @@
 import { VStack, Text } from 'native-base'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 export default function Principal(){
     return(
-        <VStack>
+        <SafeAreaView>
             <Text>
                 Principal
             </Text>
-        </VStack>
+        </SafeAreaView>
     )
 }
