@@ -40,7 +40,6 @@ export default function QRcode() {
 
   
   if (!permission?.granted) {
-    // Camera permissions are still loading or denied.
     return (
       <View style={styles.container}>
         <Text style={styles.permissionText}>Permissão da câmera não concedida.</Text>

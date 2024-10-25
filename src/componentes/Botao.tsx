@@ -6,7 +6,7 @@ interface BotaoProps extends IButtonProps {
 }
 
 export function Botao({ children, ...rest }: BotaoProps) {
-  const { fontConfig } = useTheme(); 
+  const { fontConfig } = useTheme();
 
   return (
     <Button
@@ -14,7 +14,24 @@ export function Botao({ children, ...rest }: BotaoProps) {
       bg="blue.800"
       mt={10}
       borderRadius="lg"
-      fontFamily={fontConfig.Helvetica[100].normal} 
+      fontFamily={fontConfig.Helvetica[100].normal}
+      {...rest}
+    >
+      {children}
+    </Button>
+  );
+}
+
+export function BotaoVermelho({ children, ...rest }: BotaoProps) {
+  const { fontConfig } = useTheme();
+
+  return (
+    <Button
+      w="100%"
+      bg="red.500" 
+      mt={10}
+      borderRadius="lg"
+      fontFamily={fontConfig.Helvetica[100].normal}
       {...rest}
     >
       {children}

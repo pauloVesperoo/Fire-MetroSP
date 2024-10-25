@@ -21,7 +21,6 @@ type LoginProps = NativeStackScreenProps<RootStackParamList, 'Login'>;
 
 const Login: React.FC<LoginProps> = ({ navigation }) => {
   return (
-    
     <VStack flex={1} alignItems='center' justifyContent='center' p={5}>
       <Image source={Logo} alt='Logo Metro' alignSelf='center' width={500} height={150} resizeMode='contain'/>
       <Titulo>Faça login em sua conta</Titulo>
