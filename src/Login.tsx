@@ -9,14 +9,12 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 
-// Definindo o tipo das rotas
 type RootStackParamList = {
   Login: undefined;
   Cadastro: undefined;
   Tabs: undefined;
 };
 
-// Definindo o tipo das props
 type LoginProps = NativeStackScreenProps<RootStackParamList, 'Login'>;
 
 const Login: React.FC<LoginProps> = ({ navigation }) => {
